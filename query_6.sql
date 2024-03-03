@@ -5,4 +5,4 @@
 -- RIGHT JOIN groups AS g ON g.id = s.group_fk 
 -- WHERE g.id = 1;
 
-SELECT * FROM students AS s WHERE s.group_fk = id_групи;
+SELECT * FROM students AS s WHERE s.group_fk = '?'; -- id певної групи

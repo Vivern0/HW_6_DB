@@ -5,5 +5,5 @@ FROM groups AS g
 JOIN students AS st ON st.group_fk = g.id 
 JOIN marks AS m ON m.student_fk = st.id 
 JOIN subjects AS sb ON sb.id = m.subject_fk 
-WHERE sb.subject_name = 'назва_певного_предмету'
+WHERE sb.subject_name = '?' -- назва певного предмету
 GROUP BY g.id;
